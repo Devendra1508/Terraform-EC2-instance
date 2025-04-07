@@ -92,7 +92,7 @@ resource "aws_instance" "webserver-1" {
 }
 
 resource "aws_instance" "webserver-2" {
-  ami                    = "ami-0e35ddab05955cf57"
+  ami                    = "ami-002f6e91abff6eb96"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.d-sg.id]
   subnet_id              = aws_subnet.sub2.id
